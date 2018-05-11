@@ -2,7 +2,7 @@
 
 @section('content')
      <div class="row">
-     <div class="col-md-6 col-md-offset-3">
+     <div class="col-md-6">
     <h1>Create Sale</h1>
     {!! Form::open(['action' => 'PostsController@store', 'method' => 'POST', 'enctype'=>'multipart/form-data']) !!}
         <div class="form-group">

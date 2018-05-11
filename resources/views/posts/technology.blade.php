@@ -4,8 +4,7 @@
 
             <div class="row marginMinus">
 
-                    <div class="col-md-6 ">
-
+                    <div class="col-md-6">
                     @if(count($posts) > 0)
                             @foreach($posts as $post)
                         <div class="panel panel-default">
@@ -13,7 +12,7 @@
                                <div class="row">
                                <div class="col-md-1">
                                 <a href = "/posts/{{$post->id}}">
-                                <img  style=" border-radius: 40px; width: 40px; height: 40px;" src="/storage/cover_images/iconlog.jpg">
+                                <img style=" border-radius: 40px; width: 40px; height: 40px;" src="/storage/cover_images/iconlog.jpg">
                               </a></div>
                                 <div class="col-md-4 pull-left" style="">
                                 <a href = "/posts/{{$post->id}}" style="padding-bottom: 0px;">{{$post->user->name}}</a><br/>
@@ -63,7 +62,5 @@
         {{$posts->links()}}
     @else
         <p>No post found!</p>
-
     @endif
-
 @endsection

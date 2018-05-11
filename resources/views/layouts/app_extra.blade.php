@@ -22,9 +22,8 @@
         @include('inc.navbar')
 
 
-        <div class="pull-left" >
-         @include('/inc/category')
-         </div>
+
+
             <div class="container">
 
                 <div class="col-md-offset-3" >
@@ -35,10 +34,10 @@
                 @yield('content')
                 </div>
 
-            </div>
 
 
-    </div>
+
+    </div></div>
    @include('inc.footer')
     </body>
 </html>

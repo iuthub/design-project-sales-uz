@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app_extra')
 
 @section('content')
     <div class="row marginMinus">
@@ -8,7 +8,7 @@
                 <p>Contact us and we'll get back to you within 24 hours.</p>
                 <p><span class="glyphicon glyphicon-map-marker"></span> Tashkent, Uzbekistan</p>
                 <p><span class="glyphicon glyphicon-phone"></span> +998934419024</p>
-                <p><span class="glyphicon glyphicon-envelope"></span> sale@mail.com</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> 100214</p>
             </div>
             <div class="col-md-7">
                 <div class="row">
@@ -30,5 +30,9 @@
         <div class="container-fluid">
 
         </div>
+
+
+
+
 
 @endsection

@@ -1,14 +1,28 @@
-@extends('layouts.app')
+@extends('layouts.app_extra')
 
 @section('content')
+
 <div style="margin-right: 20px">
+<h1>Our location</h1>
+ <div id="googleMap" style="width:100%;height:400px;"></div>
+
+        <script>
+        function myMap() {
+        var mapProp= {
+            center:new google.maps.LatLng(41.338525,69.334530),
+            zoom:16
+        };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrdG1VQefhtRSR9ZQ7u8ynsbgJ16vNWOw&callback=myMap"></script>
    <div class="row">
            <div class="col-md-12 ">
                    <div class="text-center bgimg-1">
                        <h1 class="h1_brand">SALE</h1>
                        <p id="def">
-                           It is new web site for our country
-                           here you can buy every thing with sale
+                           Sales website
                        </p>
                    </div>
            </div>
@@ -21,19 +35,19 @@
                        <div class="col-md-4">
                            <div class="text-center">
                                <h1 id="shopping">Shopping</h1>
-                               <p>Here you can find more than 100 shops</p>
+                               <p>More than 100 shops offering sale</p>
                            </div>
                        </div>
                        <div class="col-md-4">
                            <div class="text-center">
                                <h1 id="products">Products</h1>
-                               <p>All products are 100% original</p>
+                               <p>100% original products</p>
                            </div>
                        </div>
                        <div class="col-md-4">
                            <div class="text-center">
                                <h1 id="profit">Profit</h1>
-                               <p>You will can buy every thing with sale</p>
+                               <p>You can buy everything with sale</p>
                            </div>
                        </div>
                    </div>
@@ -144,31 +158,7 @@
 
                </div>
        </div>
-       <div class="row" id="pay">
-           <div class="well well-lg">
-           <h1 id="Payment" class="text-center">
-               Our payment systeams
-           </h1>
-           </div>
-       <div class="col-md-2">
-           <img src="images/union.png">
-       </div>
-           <div class="col-md-2">
-               <img src="images/wm.png">
-           </div>
-           <div class="col-md-2">
-               <img src="images/visa.jpg">
-           </div>
-           <div class="col-md-2">
-               <img src="images/mc.png">
-           </div>
-           <div class="col-md-2">
-               <img src="images/paypal.png">
-           </div>
-           <div class="col-md-2">
-               <img src="images/BTC.jpg">
-           </div>
-       </div>
+
 
 </div>
 @endsection

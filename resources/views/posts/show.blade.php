@@ -4,8 +4,20 @@
 
             <div class="row marginMinus">
 
-                    <div class="col-md-6 ">
 
+
+
+
+                    <div class="col-md-6">
+                    @if(auth()->check())
+                     <div class="panel panel-default">
+
+                                                    <div class="panel-heading" style="font-size: larger; padding-top: 7px; padding-bottom: 0px; padding-left: 5px; padding-right: 0px; background-color: #fff">
+                                                    <div class="row"><a href="#">
+                                                    <p>Subscribe</p></a>
+                                                    </div>
+                                                    </div></div>
+                                                    @endif
                     @if(count($posts) > 0)
                             @foreach($posts as $post)
                         <div class="panel panel-default">
@@ -13,7 +25,7 @@
                                <div class="row">
                                <div class="col-md-1">
                                 <a href = "/posts/{{$post->id}}">
-                                <img  style=" border-radius: 40px; width: 40px; height: 40px;" src="/storage/cover_images/iconlog.jpg">
+                                <img style=" border-radius: 40px; width: 40px; height: 40px;" src="/storage/cover_images/iconlog.jpg">
                               </a></div>
                                 <div class="col-md-4 pull-left" style="">
                                 <a href = "/posts/{{$post->id}}" style="padding-bottom: 0px;">{{$post->user->name}}</a><br/>
@@ -37,7 +49,7 @@
 
 
                                 @if($post->cover_image != "noimage.jpg")
-                                <p><img id="transit" style="" src="/storage/cover_images/{{$post->cover_image}}"></p>
+                                <p><img style="width:100%" src="/storage/cover_images/{{$post->cover_image}}"></p>
                                 @endif
 
                                 @if(auth()->check())
@@ -56,14 +68,12 @@
 
     </div>
 
-   @include('/posts/recomended')
+   @include('/posts/related')
 
     </div>
 
         {{$posts->links()}}
     @else
         <p>No post found!</p>
-
     @endif
-
 @endsection
