@@ -8,7 +8,6 @@
             <link href="/css/bootstrap.css" rel="stylesheet">
             <link href="/css/home.css" rel="stylesheet">
             <link href="/css/font-awesome.css" rel="stylesheet">
-            <link href="/css/categories.css" rel="stylesheet">
             <link rel="stylesheet" href="/css/aboutus.css">
             <link rel="stylesheet" href="/css/contactus.css">
 
@@ -20,21 +19,11 @@
     <body>
     <div class="container container-fluid">
         @include('inc.navbar')
-
-
-        <div class="pull-left" >
-         @include('/inc/category')
-         </div>
             <div class="container">
-
-                <div class="col-md-offset-3" >
                 @include('inc.messages')
-                </div>
-
                 <div class="container cont">
                 @yield('content')
                 </div>
-
             </div>
 
 

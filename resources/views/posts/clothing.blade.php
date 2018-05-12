@@ -4,7 +4,7 @@
 
             <div class="row marginMinus">
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-md-offset-3">
                     @if(count($posts) > 0)
                             @foreach($posts as $post)
                         <div class="panel panel-default">
@@ -36,7 +36,7 @@
 
 
                                 @if($post->cover_image != "noimage.jpg")
-                                <p><img id="transit" style="" src="/storage/cover_images/{{$post->cover_image}}"></p>
+                                <p><img style="width:100%" src="/storage/cover_images/{{$post->cover_image}}"></p>
                                 @endif
 
                                 @if(auth()->check())
