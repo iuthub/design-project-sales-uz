@@ -14,6 +14,6 @@
    #
   -Ilkhomjon Akhmadjonov	U16100079		002
 ## Website URL Link:
-  - 'http://egamovhamid.000webhost.com'
+  - https://egamovhamid.000webhostapp.com/
  ## Link to our report: eclass.inha.uz
   - We have submitted our report through eclass. The report is in eclass. 
