@@ -1,5 +1,5 @@
 Team name: 
-  Sales.uz
+  Sales.uz 
 Student ID and Names:
   Khamidjon Egamov 		U1610104 		002
 	Fazliddin Zokirov			U1610071		001
